@@ -19,7 +19,7 @@ namespace AppFarma
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            SkinManager.EnableFormSkins();
+            //SkinManager.EnableFormSkins();
             Application.Run(new Form1());
         }
     }

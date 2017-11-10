@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppFarma.WinForm.Maestros;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,13 @@ namespace AppFarma
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void bbtnCategoria_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            WFCategorias wfcat = new WFCategorias();
+            wfcat.MdiParent = this;
+            wfcat.Show();
         }
     }
 }
