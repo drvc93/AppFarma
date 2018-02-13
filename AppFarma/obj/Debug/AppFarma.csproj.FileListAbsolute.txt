@@ -1,5 +1,7 @@
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\AppFarma.exe
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\AppFarma.pdb
+D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\C1.C1DataExtender.2.dll
+D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\CapaData.dll
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.BonusSkins.v17.1.dll
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.CodeParser.v17.1.dll
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.Data.v17.1.dll
@@ -12,14 +14,13 @@ D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.XtraEditors.v17.1.dll
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.XtraGrid.v17.1.dll
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.XtraLayout.v17.1.dll
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.XtraPrinting.v17.1.dll
-D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\Telerik.WinControls.dll
-D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\Telerik.WinControls.UI.dll
-D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\TelerikCommon.dll
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.RichEdit.v17.1.Core.dll
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.Office.v17.1.Core.dll
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.XtraTreeList.v17.1.dll
+D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\CapaData.pdb
+D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\C1.C1DataExtender.2.xml
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.Data.v17.1.xml
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.DataAccess.v17.1.xml
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.Printing.v17.1.Core.xml
@@ -30,8 +31,6 @@ D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.XtraEditors.v17.1.xml
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.XtraGrid.v17.1.xml
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.XtraLayout.v17.1.xml
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.XtraPrinting.v17.1.xml
-D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\Telerik.WinControls.xml
-D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\Telerik.WinControls.UI.xml
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.RichEdit.v17.1.Core.xml
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.Office.v17.1.Core.xml
 D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
@@ -101,9 +100,8 @@ D:\ProyectoFarma\AppFarma\AppFarma\obj\Debug\AppFarma.csprojResolveAssemblyRefer
 D:\ProyectoFarma\AppFarma\AppFarma\obj\Debug\AppFarma.Form1.resources
 D:\ProyectoFarma\AppFarma\AppFarma\obj\Debug\AppFarma.Properties.Resources.resources
 D:\ProyectoFarma\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Maestros.WFCategorias.resources
+D:\ProyectoFarma\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Maestros.WFSubCategorias.resources
 D:\ProyectoFarma\AppFarma\AppFarma\obj\Debug\AppFarma.csproj.GenerateResource.Cache
 D:\ProyectoFarma\AppFarma\AppFarma\obj\Debug\AppFarma.exe.licenses
 D:\ProyectoFarma\AppFarma\AppFarma\obj\Debug\AppFarma.exe
 D:\ProyectoFarma\AppFarma\AppFarma\obj\Debug\AppFarma.pdb
-D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\CapaData.dll
-D:\ProyectoFarma\AppFarma\AppFarma\bin\Debug\CapaData.pdb

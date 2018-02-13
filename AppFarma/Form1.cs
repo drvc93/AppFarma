@@ -23,5 +23,12 @@ namespace AppFarma
             wfcat.MdiParent = this;
             wfcat.Show();
         }
+
+        private void barbtnSubCategorias_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            WFSubCategorias wfcat = new WFSubCategorias();
+            wfcat.MdiParent = this;
+            wfcat.Show();
+        }
     }
 }

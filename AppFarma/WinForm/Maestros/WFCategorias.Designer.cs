@@ -32,6 +32,10 @@ namespace AppFarma.WinForm.Maestros
         {
             this.gvCategorias = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.n_categoria = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.c_descripcion = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.c_usuarioregistro = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.c_ultimafechamod = new DevExpress.XtraGrid.Columns.GridColumn();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.btn_Cancel = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
@@ -45,10 +49,7 @@ namespace AppFarma.WinForm.Maestros
             this.txtCodCategoria = new DevExpress.XtraEditors.TextEdit();
             this.btnNuevo = new DevExpress.XtraEditors.SimpleButton();
             this.btnModificar = new DevExpress.XtraEditors.SimpleButton();
-            this.n_categoria = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.c_descripcion = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.c_usuarioregistro = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.c_ultimafechamod = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.c1DataViewSet1 = new C1.C1DataExtender.C1DataViewSet();
             ((System.ComponentModel.ISupportInitialize)(this.gvCategorias)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
@@ -57,6 +58,7 @@ namespace AppFarma.WinForm.Maestros
             ((System.ComponentModel.ISupportInitialize)(this.txtUltimoUsuario.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodCategoria.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1DataViewSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // gvCategorias
@@ -82,6 +84,41 @@ namespace AppFarma.WinForm.Maestros
             this.c_ultimafechamod});
             this.gridView1.GridControl = this.gvCategorias;
             this.gridView1.Name = "gridView1";
+            // 
+            // n_categoria
+            // 
+            this.n_categoria.Caption = "Codigo";
+            this.n_categoria.FieldName = "n_categoria";
+            this.n_categoria.Name = "n_categoria";
+            this.n_categoria.OptionsColumn.AllowEdit = false;
+            this.n_categoria.Visible = true;
+            this.n_categoria.VisibleIndex = 0;
+            // 
+            // c_descripcion
+            // 
+            this.c_descripcion.Caption = "Descripción";
+            this.c_descripcion.FieldName = "c_descripcion";
+            this.c_descripcion.Name = "c_descripcion";
+            this.c_descripcion.OptionsColumn.AllowEdit = false;
+            this.c_descripcion.Visible = true;
+            this.c_descripcion.VisibleIndex = 1;
+            // 
+            // c_usuarioregistro
+            // 
+            this.c_usuarioregistro.Caption = "Usuario Registro";
+            this.c_usuarioregistro.FieldName = "c_usuarioregistro";
+            this.c_usuarioregistro.Name = "c_usuarioregistro";
+            this.c_usuarioregistro.OptionsColumn.AllowEdit = false;
+            this.c_usuarioregistro.Visible = true;
+            this.c_usuarioregistro.VisibleIndex = 2;
+            // 
+            // c_ultimafechamod
+            // 
+            this.c_ultimafechamod.Caption = "Ult.Fecha Mod.";
+            this.c_ultimafechamod.FieldName = "c_ultimafechamod";
+            this.c_ultimafechamod.Name = "c_ultimafechamod";
+            this.c_ultimafechamod.Visible = true;
+            this.c_ultimafechamod.VisibleIndex = 3;
             // 
             // radPanel1
             // 
@@ -233,40 +270,9 @@ namespace AppFarma.WinForm.Maestros
             this.btnModificar.Text = "Modificar";
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // n_categoria
+            // c1DataViewSet1
             // 
-            this.n_categoria.Caption = "Codigo";
-            this.n_categoria.FieldName = "n_categoria";
-            this.n_categoria.Name = "n_categoria";
-            this.n_categoria.OptionsColumn.AllowEdit = false;
-            this.n_categoria.Visible = true;
-            this.n_categoria.VisibleIndex = 0;
-            // 
-            // c_descripcion
-            // 
-            this.c_descripcion.Caption = "Descripción";
-            this.c_descripcion.FieldName = "c_descripcion";
-            this.c_descripcion.Name = "c_descripcion";
-            this.c_descripcion.OptionsColumn.AllowEdit = false;
-            this.c_descripcion.Visible = true;
-            this.c_descripcion.VisibleIndex = 1;
-            // 
-            // c_usuarioregistro
-            // 
-            this.c_usuarioregistro.Caption = "Usuario Registro";
-            this.c_usuarioregistro.FieldName = "c_usuarioregistro";
-            this.c_usuarioregistro.Name = "c_usuarioregistro";
-            this.c_usuarioregistro.OptionsColumn.AllowEdit = false;
-            this.c_usuarioregistro.Visible = true;
-            this.c_usuarioregistro.VisibleIndex = 2;
-            // 
-            // c_ultimafechamod
-            // 
-            this.c_ultimafechamod.Caption = "Ult.Fecha Mod.";
-            this.c_ultimafechamod.FieldName = "c_ultimafechamod";
-            this.c_ultimafechamod.Name = "c_ultimafechamod";
-            this.c_ultimafechamod.Visible = true;
-            this.c_ultimafechamod.VisibleIndex = 3;
+            this.c1DataViewSet1.DiagramXML = "";
             // 
             // WFCategorias
             // 
@@ -288,6 +294,7 @@ namespace AppFarma.WinForm.Maestros
             ((System.ComponentModel.ISupportInitialize)(this.txtUltimoUsuario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodCategoria.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1DataViewSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -313,5 +320,6 @@ namespace AppFarma.WinForm.Maestros
         private DevExpress.XtraGrid.Columns.GridColumn c_descripcion;
         private DevExpress.XtraGrid.Columns.GridColumn c_usuarioregistro;
         private DevExpress.XtraGrid.Columns.GridColumn c_ultimafechamod;
+        private C1.C1DataExtender.C1DataViewSet c1DataViewSet1;
     }
 }
