@@ -30,5 +30,12 @@ namespace AppFarma
             wfcat.MdiParent = this;
             wfcat.Show();
         }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            WFProducto wfprod = new WFProducto();
+            wfprod.MdiParent = this;
+            wfprod.Show();
+        }
     }
 }

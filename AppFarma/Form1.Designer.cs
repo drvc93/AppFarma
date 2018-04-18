@@ -1,4 +1,7 @@
-﻿namespace AppFarma
+﻿using DevExpress.XtraBars;
+using DevExpress.XtraBars.Ribbon;
+
+namespace AppFarma
 {
     partial class Form1
     {
@@ -33,8 +36,11 @@
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbtnCategoria = new DevExpress.XtraBars.BarButtonItem();
             this.barbtnSubCategorias = new DevExpress.XtraBars.BarButtonItem();
+            this.barlblUser = new DevExpress.XtraBars.BarStaticItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
@@ -46,14 +52,18 @@
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
             this.bbtnCategoria,
-            this.barbtnSubCategorias});
+            this.barbtnSubCategorias,
+            this.barlblUser,
+            this.barButtonItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 4;
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ribbonControl1.MaxItemId = 6;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
-            this.ribbonControl1.Size = new System.Drawing.Size(758, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(884, 179);
+            this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // bbtnCategoria
             // 
@@ -75,6 +85,22 @@
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.barbtnSubCategorias.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barbtnSubCategorias_ItemClick);
             // 
+            // barlblUser
+            // 
+            this.barlblUser.Caption = "barStaticItem1";
+            this.barlblUser.Id = 4;
+            this.barlblUser.Name = "barlblUser";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Producto";
+            this.barButtonItem1.Id = 5;
+            this.barButtonItem1.ImageOptions.Image = global::AppFarma.Properties.Resources.icn_produc32;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -86,7 +112,17 @@
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.bbtnCategoria);
             this.ribbonPageGroup1.ItemLinks.Add(this.barbtnSubCategorias);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
+            // ribbonStatusBar1
+            // 
+            this.ribbonStatusBar1.ItemLinks.Add(this.barlblUser);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 403);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ribbonStatusBar1.Name = "ribbonStatusBar1";
+            this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(884, 40);
             // 
             // xtraTabbedMdiManager1
             // 
@@ -94,15 +130,18 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(758, 360);
+            this.ClientSize = new System.Drawing.Size(884, 443);
+            this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StatusBar = this.ribbonStatusBar1;
             this.Text = "Aplicacion";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
@@ -120,6 +159,9 @@
         private DevExpress.XtraBars.BarButtonItem bbtnCategoria;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
         private DevExpress.XtraBars.BarButtonItem barbtnSubCategorias;
+        private BarStaticItem barlblUser;
+        private RibbonStatusBar ribbonStatusBar1;
+        private BarButtonItem barButtonItem1;
     }
 }
 

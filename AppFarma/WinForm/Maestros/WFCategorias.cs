@@ -50,15 +50,19 @@ namespace AppFarma.WinForm.Maestros
             {
                 DataCategoria dc = new DataCategoria();
                 string rspta = dc.InsertCategoria(CodCategoria, txtDescripcion.Text.ToUpper().Trim(), txtUltimoUsuario.Text.ToUpper());
-                if (rspta=="OK")
+                if (rspta == "OK")
                 {
 
-                    XtraMessageBox.Show("Se guardo la información correctamente.", "Exito", MessageBoxButtons.OK , MessageBoxIcon.Information);
+                    XtraMessageBox.Show("Se guardo la información correctamente.", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtDescripcion.Text = "";
                     txtUltimoUsuario.Text = "";
                     txtCodCategoria.Text = "";
                     ActivarControles(false);
                     CargarGridCategoria();
+                }
+                else {
+
+                    XtraMessageBox.Show(rspta, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             } 
         }
@@ -114,6 +118,11 @@ namespace AppFarma.WinForm.Maestros
               txtUltimoUsuario.Text = gridView1.GetRowCellValue(index, "c_usuarioregistro").ToString();
 
             }
+        }
+
+        private void WFCategorias_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

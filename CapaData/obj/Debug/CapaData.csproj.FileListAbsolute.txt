@@ -1,5 +1,10 @@
 D:\ProyectoFarma\AppFarma\CapaData\bin\Debug\CapaData.dll
 D:\ProyectoFarma\AppFarma\CapaData\bin\Debug\CapaData.pdb
-D:\ProyectoFarma\AppFarma\CapaData\obj\Debug\CapaData.csprojResolveAssemblyReference.cache
 D:\ProyectoFarma\AppFarma\CapaData\obj\Debug\CapaData.dll
 D:\ProyectoFarma\AppFarma\CapaData\obj\Debug\CapaData.pdb
+D:\ProyectoFarma\AppFarma\CapaData\obj\Debug\CapaData.csprojResolveAssemblyReference.cache
+D:\AppFarma\CapaData\bin\Debug\CapaData.dll
+D:\AppFarma\CapaData\bin\Debug\CapaData.pdb
+D:\AppFarma\CapaData\obj\Debug\CapaData.csprojResolveAssemblyReference.cache
+D:\AppFarma\CapaData\obj\Debug\CapaData.dll
+D:\AppFarma\CapaData\obj\Debug\CapaData.pdb
