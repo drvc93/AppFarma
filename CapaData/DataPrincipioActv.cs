@@ -8,30 +8,32 @@ using System.Threading.Tasks;
 
 namespace CapaData
 {
-    public class DataSubCategoria
+    public class DataPrincipioActv
     {
         Conexion con;
 
-        public DataSubCategoria()
+        public DataPrincipioActv()
         {
             con = new Conexion();
         }
 
-        public string InsertSubCategoria(int  subcategoria , int categoria , string descripcion , string usuarioreg  , string estado  ) {
+        public string InsertarPrincipioActivo(int codPincipio , string sDescripcion , string sEstado , string sUltUsuario , DateTime dFecha)
+        {
+
             SqlConnection cn = con.conexion();
             string result = "";
             SqlCommand sqlcmd = new SqlCommand();
             sqlcmd.Connection = cn;
             try
             {
-                sqlcmd.CommandText = "SPI_SUBCATEGORIA";
+                sqlcmd.CommandText = "SPI_PRINCIP_ACTIVO";
                 sqlcmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
-                sqlcmd.Parameters.AddWithValue("@SubCategoria", subcategoria);
-                sqlcmd.Parameters.AddWithValue("@Categoria", categoria);
-                sqlcmd.Parameters.AddWithValue("@Descripcion", descripcion);
-                sqlcmd.Parameters.AddWithValue("@UsuarioReg", usuarioreg);
-                sqlcmd.Parameters.AddWithValue("@Estado", estado);
+                sqlcmd.Parameters.AddWithValue("@CodPrincipio", codPincipio);
+                sqlcmd.Parameters.AddWithValue("@Descripcion", sDescripcion);
+                sqlcmd.Parameters.AddWithValue("@Estado", sEstado);
+                sqlcmd.Parameters.AddWithValue("@Usuario", sUltUsuario);
+                sqlcmd.Parameters.AddWithValue("@Fecha", dFecha);
 
                 int rowsafect = sqlcmd.ExecuteNonQuery();
                 if (rowsafect > 0)
@@ -48,18 +50,22 @@ namespace CapaData
             return result;
         }
 
-        public DataTable ListaSubCategoria(int codSub, int nCategoria) {
+        public  DataTable ListaPrincipiosActv (int codPricip  , string sDescripcion ,  string sEstado )
+        {
+
             SqlConnection cn = con.conexion();
             cn.Open();
-            SqlDataAdapter dap = new SqlDataAdapter("SPS_SUBCATGORIA", cn);
+            SqlDataAdapter dap = new SqlDataAdapter("SPS_LISTA_PRINCIPIOSACTIVOS", cn);
             DataTable dt = new DataTable();
             dap.SelectCommand.CommandType = CommandType.StoredProcedure;
-            dap.SelectCommand.Parameters.AddWithValue("@SubCategoria", codSub);
-            dap.SelectCommand.Parameters.AddWithValue("@Categoria", nCategoria);
+            dap.SelectCommand.Parameters.AddWithValue("@CodPrincipio", codPricip);
+            dap.SelectCommand.Parameters.AddWithValue("@Descripcion", sDescripcion);
+            dap.SelectCommand.Parameters.AddWithValue("@Estado", sEstado);
             dap.Fill(dt);
             cn.Close();
 
             return dt;
         }
+
     }
 }

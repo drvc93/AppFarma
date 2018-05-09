@@ -8,7 +8,9 @@ using DevExpress.Skins;
 namespace AppFarma
 {
     static class Program
-    {
+    {   
+
+        public static  string sUsuario ;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -21,6 +23,18 @@ namespace AppFarma
             BonusSkins.Register();
             //SkinManager.EnableFormSkins();
             Application.Run(new Form1());
+        }
+
+        public static string SUsuario
+        {
+            get
+            {
+                return sUsuario;
+            }
+            set
+            {
+                sUsuario = value;
+            }
         }
     }
 }

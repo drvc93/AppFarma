@@ -118,14 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icn_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icn_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icn_cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icn_cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icn_guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icn_guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icn_produc32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icn_produc32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icn_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icn_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icn_agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icn_agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,7 +133,10 @@
   <data name="icn_categoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icn_categoria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icn_produc32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icn_produc32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icn_guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icn_guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icn_princp_Act" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icn_princp_Act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

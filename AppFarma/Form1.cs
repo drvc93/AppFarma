@@ -11,10 +11,12 @@ using System.Windows.Forms;
 namespace AppFarma
 {
     public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm
-    {
+    {   
+        
         public Form1()
         {
             InitializeComponent();
+            Program.sUsuario = "DVILLANUEV";   
         }
 
         private void bbtnCategoria_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -36,6 +38,14 @@ namespace AppFarma
             WFProducto wfprod = new WFProducto();
             wfprod.MdiParent = this;
             wfprod.Show();
+        }
+
+        private void barbtnPrincpAct_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+            WPrincipActiv wpact = new WPrincipActiv();
+            wpact.MdiParent = this;
+            wpact.Show();
         }
     }
 }

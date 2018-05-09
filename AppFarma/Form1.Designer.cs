@@ -38,6 +38,7 @@ namespace AppFarma
             this.barbtnSubCategorias = new DevExpress.XtraBars.BarButtonItem();
             this.barlblUser = new DevExpress.XtraBars.BarStaticItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barbtnPrincpAct = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -54,10 +55,11 @@ namespace AppFarma
             this.bbtnCategoria,
             this.barbtnSubCategorias,
             this.barlblUser,
-            this.barButtonItem1});
+            this.barButtonItem1,
+            this.barbtnPrincpAct});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ribbonControl1.MaxItemId = 6;
+            this.ribbonControl1.MaxItemId = 7;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -101,6 +103,16 @@ namespace AppFarma
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
+            // barbtnPrincpAct
+            // 
+            this.barbtnPrincpAct.Caption = "Principio Activos";
+            this.barbtnPrincpAct.Id = 6;
+            this.barbtnPrincpAct.ImageOptions.Image = global::AppFarma.Properties.Resources.icn_princp_Act;
+            this.barbtnPrincpAct.Name = "barbtnPrincpAct";
+            this.barbtnPrincpAct.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barbtnPrincpAct.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barbtnPrincpAct_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -113,6 +125,7 @@ namespace AppFarma
             this.ribbonPageGroup1.ItemLinks.Add(this.bbtnCategoria);
             this.ribbonPageGroup1.ItemLinks.Add(this.barbtnSubCategorias);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barbtnPrincpAct);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
             // ribbonStatusBar1
@@ -162,6 +175,7 @@ namespace AppFarma
         private BarStaticItem barlblUser;
         private RibbonStatusBar ribbonStatusBar1;
         private BarButtonItem barButtonItem1;
+        private BarButtonItem barbtnPrincpAct;
     }
 }
 

@@ -24,7 +24,7 @@ namespace AppFarma.WinForm.Maestros
         public void LoadComboCategoria() {
 
             DataCategoria d = new DataCategoria();
-            cboCat.DataSource = d.ListaCategori(0);
+            cboCat.DataSource = d.ListaCategori(0,"%");
             cboCat.DisplayMember = "c_descripcion";
             cboCat.ValueMember = "n_categoria";
 
@@ -111,7 +111,7 @@ namespace AppFarma.WinForm.Maestros
 
         public void LoadGridSubCategorias (){
             DataSubCategoria dsc = new DataSubCategoria();
-            gvSubCategorias.DataSource = dsc.ListaSubCategoria(0);
+            gvSubCategorias.DataSource = dsc.ListaSubCategoria(0,0);
         }
 
         private void gvSubCategorias_Click(object sender, EventArgs e)

@@ -17,7 +17,7 @@ namespace CapaData
             con = new Conexion();
         }
 
-        public DataTable ListaCategori(int codigocat)
+        public DataTable ListaCategori(int codigocat,string estado)
         {
             
             SqlConnection cn = con.conexion();
@@ -26,6 +26,7 @@ namespace CapaData
             DataTable dt = new DataTable();
             dap.SelectCommand.CommandType = CommandType.StoredProcedure;
             dap.SelectCommand.Parameters.AddWithValue ("@CodigoCategoria", codigocat);
+            dap.SelectCommand.Parameters.AddWithValue("@Estado", estado);
             dap.Fill(dt);
             cn.Close();
 

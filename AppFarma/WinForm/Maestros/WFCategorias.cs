@@ -104,7 +104,7 @@ namespace AppFarma.WinForm.Maestros
         public  void CargarGridCategoria ()
         {
             DataCategoria dtcat = new DataCategoria();
-            gvCategorias.DataSource = dtcat.ListaCategori(0);
+            gvCategorias.DataSource = dtcat.ListaCategori(0, "%");
         }
 
         private void gvCategorias_Click(object sender, EventArgs e)
