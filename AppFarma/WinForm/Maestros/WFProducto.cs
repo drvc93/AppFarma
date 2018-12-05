@@ -81,14 +81,21 @@ namespace AppFarma.WinForm.Maestros
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             string  sDescrip ,sUsuario, sEstado , sProducto;
-            int nSubCateg;
+            int nSubCateg , nCatego;
             sProducto = String.IsNullOrEmpty(txtCodProducto.Text) ? "N" : txtCodProducto.Text;
             nSubCateg = cboSubCat.SelectedIndex >= 0 ?  Convert.ToInt32( cboSubCat.SelectedValue ): -1;
+            nCatego = cboCat.SelectedIndex >= 0 ? Convert.ToInt32(cboCat.SelectedValue) : -1;
             sUsuario = "";
             sDescrip = txtDescripcion.Text;
             sEstado = sProducto == "N" ? "A" : chkEstadoProd.Checked?"A":"I";
-            
-          
+
+
+
+            if (nCatego == -1)
+            {
+                XtraMessageBox.Show(text: "Seleccione  Categoria", caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Warning);
+                return;
+            }
 
             if (nSubCateg == -1)
             {
@@ -101,7 +108,7 @@ namespace AppFarma.WinForm.Maestros
                 return;
             }
 
-            String result = prod.InsertModProducto(sProducto, sDescrip, nSubCateg, sEstado, sUsuario, DateTime.Now);
+            String result = prod.InsertModProducto(sProducto, sDescrip,txtCodBarra.Text , nCatego, nSubCateg, sEstado, sUsuario, DateTime.Now);
 
             if (result == "OK")
             {
@@ -129,6 +136,8 @@ namespace AppFarma.WinForm.Maestros
             chkEstadoProd.Checked = true;
             chkEstadoProd.Enabled = false;
             btnGuardar.Enabled = true;
+            txtCodBarra.Enabled = true;
+            txtUltimoUsuario.Text = Program.SUsuario;
         }
 
         private void gvProductos_Click(object sender, EventArgs e)

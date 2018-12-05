@@ -72,6 +72,8 @@ namespace AppFarma.WinForm.Maestros
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.btnExportarGV = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.txtCodBarra = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chkEstadoProd.Properties)).BeginInit();
@@ -84,12 +86,15 @@ namespace AppFarma.WinForm.Maestros
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCodBarra.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // radPanel1
             // 
             this.radPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.radPanel1.Controls.Add(this.labelControl8);
+            this.radPanel1.Controls.Add(this.txtCodBarra);
             this.radPanel1.Controls.Add(this.labelControl7);
             this.radPanel1.Controls.Add(this.chkEstadoProd);
             this.radPanel1.Controls.Add(this.labelControl6);
@@ -118,7 +123,7 @@ namespace AppFarma.WinForm.Maestros
             this.labelControl7.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(55, 257);
+            this.labelControl7.Location = new System.Drawing.Point(55, 286);
             this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(50, 18);
@@ -127,7 +132,7 @@ namespace AppFarma.WinForm.Maestros
             // 
             // chkEstadoProd
             // 
-            this.chkEstadoProd.Location = new System.Drawing.Point(122, 258);
+            this.chkEstadoProd.Location = new System.Drawing.Point(122, 287);
             this.chkEstadoProd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chkEstadoProd.Name = "chkEstadoProd";
             this.chkEstadoProd.Properties.Caption = "Activo";
@@ -193,7 +198,7 @@ namespace AppFarma.WinForm.Maestros
             // btn_Cancel
             // 
             this.btn_Cancel.ImageOptions.Image = global::AppFarma.Properties.Resources.icn_cancel;
-            this.btn_Cancel.Location = new System.Drawing.Point(226, 297);
+            this.btn_Cancel.Location = new System.Drawing.Point(226, 326);
             this.btn_Cancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(111, 39);
@@ -204,7 +209,7 @@ namespace AppFarma.WinForm.Maestros
             // 
             this.btnGuardar.Enabled = false;
             this.btnGuardar.ImageOptions.Image = global::AppFarma.Properties.Resources.icn_guardar;
-            this.btnGuardar.Location = new System.Drawing.Point(122, 298);
+            this.btnGuardar.Location = new System.Drawing.Point(122, 327);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(98, 39);
@@ -218,7 +223,7 @@ namespace AppFarma.WinForm.Maestros
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(37, 229);
+            this.labelControl4.Location = new System.Drawing.Point(37, 258);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(71, 18);
@@ -228,7 +233,7 @@ namespace AppFarma.WinForm.Maestros
             // txtUltimaFecha
             // 
             this.txtUltimaFecha.Enabled = false;
-            this.txtUltimaFecha.Location = new System.Drawing.Point(122, 217);
+            this.txtUltimaFecha.Location = new System.Drawing.Point(122, 246);
             this.txtUltimaFecha.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUltimaFecha.Name = "txtUltimaFecha";
             this.txtUltimaFecha.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
@@ -242,7 +247,7 @@ namespace AppFarma.WinForm.Maestros
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(23, 187);
+            this.labelControl3.Location = new System.Drawing.Point(23, 216);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(85, 18);
@@ -252,7 +257,7 @@ namespace AppFarma.WinForm.Maestros
             // txtUltimoUsuario
             // 
             this.txtUltimoUsuario.Enabled = false;
-            this.txtUltimoUsuario.Location = new System.Drawing.Point(122, 175);
+            this.txtUltimoUsuario.Location = new System.Drawing.Point(122, 204);
             this.txtUltimoUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUltimoUsuario.Name = "txtUltimoUsuario";
             this.txtUltimoUsuario.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
@@ -517,6 +522,30 @@ namespace AppFarma.WinForm.Maestros
             this.btnExportarGV.Text = "Exportar";
             this.btnExportarGV.Click += new System.EventHandler(this.btnExportarGV_Click);
             // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Appearance.Options.UseForeColor = true;
+            this.labelControl8.Location = new System.Drawing.Point(27, 178);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(79, 18);
+            this.labelControl8.TabIndex = 18;
+            this.labelControl8.Text = "Cod. Barra";
+            // 
+            // txtCodBarra
+            // 
+            this.txtCodBarra.Enabled = false;
+            this.txtCodBarra.Location = new System.Drawing.Point(122, 166);
+            this.txtCodBarra.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCodBarra.Name = "txtCodBarra";
+            this.txtCodBarra.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtCodBarra.Properties.Appearance.Options.UseFont = true;
+            this.txtCodBarra.Size = new System.Drawing.Size(248, 30);
+            this.txtCodBarra.TabIndex = 17;
+            // 
             // WFProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -547,6 +576,7 @@ namespace AppFarma.WinForm.Maestros
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCodBarra.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -594,5 +624,7 @@ namespace AppFarma.WinForm.Maestros
         private BarDockControl barDockControlRight;
         private DevExpress.XtraEditors.SimpleButton btnExportarGV;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.TextEdit txtCodBarra;
     }
 }

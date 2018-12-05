@@ -16,7 +16,7 @@ namespace CapaData
              con = new Conexion();
         }
 
-        public string InsertModProducto(string codproducto, string descripcion, int subcat, string estado, string usuario, DateTime fecha)
+        public string InsertModProducto(string codproducto, string descripcion, string sCodBarra , int  nCatg , int subcat, string estado, string usuario, DateTime fecha)
         {
             SqlConnection cn = con.conexion();
             string result = "";
@@ -29,10 +29,12 @@ namespace CapaData
                 cn.Open();
                 sqlcmd.Parameters.AddWithValue("@CodProducto", codproducto);
                 sqlcmd.Parameters.AddWithValue("@DescripcionProd", descripcion);
+                sqlcmd.Parameters.AddWithValue("@Categoria", nCatg);
                 sqlcmd.Parameters.AddWithValue("@SubCategoria", subcat);
                 sqlcmd.Parameters.AddWithValue("@Estado", estado);
                 sqlcmd.Parameters.AddWithValue("@Usuario", usuario);
                 sqlcmd.Parameters.AddWithValue("@Fecha", fecha);
+                sqlcmd.Parameters.AddWithValue("@CodBarra", sCodBarra);
 
                 int rowsafect = sqlcmd.ExecuteNonQuery();
                 if (rowsafect > 0)
