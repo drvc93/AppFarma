@@ -323,7 +323,7 @@
             // c_ultimafechamod
             // 
             this.c_ultimafechamod.Caption = "Ult.Fecha Mod.";
-            this.c_ultimafechamod.FieldName = "c_ultimafechamod";
+            this.c_ultimafechamod.FieldName = "d_ultimafechamod";
             this.c_ultimafechamod.Name = "c_ultimafechamod";
             this.c_ultimafechamod.Visible = true;
             this.c_ultimafechamod.VisibleIndex = 5;

@@ -34,7 +34,7 @@
             this.c_descripcion = new DevExpress.XtraGrid.Columns.GridColumn();
             this.c_usuarioregistro = new DevExpress.XtraGrid.Columns.GridColumn();
             this.c_ultimafechamod = new DevExpress.XtraGrid.Columns.GridColumn();
-//            this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btn_Cancel = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
             this.txtUltimaFecha = new DevExpress.XtraEditors.TextEdit();
@@ -50,10 +50,9 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gvPrincipActiv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            //((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUltimaFecha.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUltimoUsuario.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).BeginInit();
@@ -61,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chkEstadoPrincipio.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // gvPrincipActiv
@@ -129,10 +129,14 @@
             this.c_ultimafechamod.Visible = true;
             this.c_ultimafechamod.VisibleIndex = 3;
             // 
-            // repositoryItemCheckEdit1
+            // gridColumn1
             // 
-            //this.repositoryItemCheckEdit1.AutoHeight = false;
-            //this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
+            this.gridColumn1.Caption = "Estado";
+            this.gridColumn1.ColumnEdit = this.repositoryItemCheckEdit1;
+            this.gridColumn1.FieldName = "c_estado";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 4;
             // 
             // btn_Cancel
             // 
@@ -318,13 +322,10 @@
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "Codigo";
             // 
-            // gridColumn1
+            // repositoryItemCheckEdit1
             // 
-            this.gridColumn1.Caption = "Estado";
-            this.gridColumn1.FieldName = "c_estado";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 4;
+            this.repositoryItemCheckEdit1.AutoHeight = false;
+            this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
             // 
             // WPrincipActiv
             // 
@@ -339,7 +340,6 @@
             this.Text = "Principio Activo";
             ((System.ComponentModel.ISupportInitialize)(this.gvPrincipActiv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUltimaFecha.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUltimoUsuario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).EndInit();
@@ -348,6 +348,7 @@
             this.radPanel1.ResumeLayout(false);
             this.radPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chkEstadoPrincipio.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -360,7 +361,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn c_descripcion;
         private DevExpress.XtraGrid.Columns.GridColumn c_usuarioregistro;
         private DevExpress.XtraGrid.Columns.GridColumn c_ultimafechamod;
-        private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
+        //private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
         private DevExpress.XtraEditors.SimpleButton btn_Cancel;
         private DevExpress.XtraEditors.SimpleButton btnGuardar;
         private DevExpress.XtraEditors.TextEdit txtUltimaFecha;
@@ -377,5 +378,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.CheckEdit chkEstadoPrincipio;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
     }
 }

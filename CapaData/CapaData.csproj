@@ -43,9 +43,11 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="DataCategoria.cs" />
+    <Compile Include="DataCliente.cs" />
     <Compile Include="DataPrincipioActv.cs" />
     <Compile Include="DataProducto.cs" />
     <Compile Include="DataSubCategoria.cs" />
+    <Compile Include="DataUbigeo.cs" />
     <Compile Include="IniFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

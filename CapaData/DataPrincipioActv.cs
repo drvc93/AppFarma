@@ -33,7 +33,7 @@ namespace CapaData
                 sqlcmd.Parameters.AddWithValue("@Descripcion", sDescripcion);
                 sqlcmd.Parameters.AddWithValue("@Estado", sEstado);
                 sqlcmd.Parameters.AddWithValue("@Usuario", sUltUsuario);
-                sqlcmd.Parameters.AddWithValue("@Fecha", dFecha);
+                sqlcmd.Parameters.AddWithValue("@Fecha", DateTime.Now);
 
                 int rowsafect = sqlcmd.ExecuteNonQuery();
                 if (rowsafect > 0)

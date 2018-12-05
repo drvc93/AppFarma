@@ -122,9 +122,9 @@ namespace AppFarma.WinForm.Maestros
                 txtCodSubcategoria.Text = gridView1.GetRowCellValue(index, "n_subcategoria").ToString();
                 cboCat.SelectedValue = gridView1.GetRowCellValue(index, "n_categoria").ToString();
                 txtDescripcionSub.Text = gridView1.GetRowCellValue(index, "c_descripcion").ToString();
-                txtUltFecha.Text = gridView1.GetRowCellValue(index, "c_ultimafechamod").ToString();
+                txtUltFecha.Text = gridView1.GetRowCellValue(index, "d_ultimafechamod").ToString();
                 chkEstadoSubCat.Checked = Convert.ToBoolean(gridView1.GetRowCellValue(index, "c_estado")) == true ? true : false; 
-                //txtUltimoUsuario.Text = gridView1.GetRowCellValue(index, "c_usuarioregistro").ToString();
+                txtUltUsuario.Text = gridView1.GetRowCellValue(index, "c_usuarioregistro").ToString();
 
             }
         }

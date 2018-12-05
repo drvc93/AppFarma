@@ -25,7 +25,7 @@ namespace AppFarma.WinForm.Maestros
             int codPrincipio = String.IsNullOrEmpty(txtCodPrincipio.Text) ? 0 : Convert.ToInt32(txtCodPrincipio.Text);
             string sDescrip = txtDescripcion.Text.ToUpper();
             string sEstado = chkEstadoPrincipio.Checked ? "A" : "I";
-            String sUsuario = "DVILLANUEV";
+            String sUsuario = Program.sUsuario;
 
             DataPrincipioActv pr = new DataPrincipioActv();
 
