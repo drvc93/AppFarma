@@ -70,20 +70,20 @@ namespace AppFarma.WinForm.Dialogs
                 return;
             }
 
-            if (String.IsNullOrEmpty(ddwDepartamento.EditValue.ToString()) || ddwDepartamento.EditValue == "Seleccionar")
+            if (String.IsNullOrEmpty(ddwDepartamento.EditValue.ToString()) || ddwDepartamento.EditValue.ToString() == "Seleccionar")
             {
                 XtraMessageBox.Show(text: "Seleccione un departamento.", caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Exclamation);
                 return;
             }
 
 
-            if (String.IsNullOrEmpty(ddwProv.EditValue.ToString()) ||  ddwProv.EditValue == "Seleccionar")
+            if (String.IsNullOrEmpty(ddwProv.EditValue.ToString()) ||  ddwProv.EditValue.ToString() == "Seleccionar")
             {
                 XtraMessageBox.Show(text: "Seleccione una provincia.", caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Exclamation);
                 return;
             }
 
-            if (String.IsNullOrEmpty(ddwDist.EditValue.ToString()) || ddwDist.EditValue == "Seleccionar")
+            if (String.IsNullOrEmpty(ddwDist.EditValue.ToString()) || ddwDist.EditValue.ToString() == "Seleccionar")
             {
                 XtraMessageBox.Show(text: "Seleccione un distrito.", caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Exclamation);
                 return;

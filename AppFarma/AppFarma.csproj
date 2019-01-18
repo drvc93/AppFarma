@@ -149,11 +149,23 @@
     <Compile Include="WinForm\Maestros\WFCliente.Designer.cs">
       <DependentUpon>WFCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinForm\Maestros\WFPresentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\Maestros\WFPresentacion.Designer.cs">
+      <DependentUpon>WFPresentacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinForm\Maestros\WFProducto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WinForm\Maestros\WFProducto.Designer.cs">
       <DependentUpon>WFProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForm\Maestros\WFProductoPresentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForm\Maestros\WFProductoPresentacion.Designer.cs">
+      <DependentUpon>WFProductoPresentacion.cs</DependentUpon>
     </Compile>
     <Compile Include="WinForm\Maestros\WFSubCategorias.cs">
       <SubType>Form</SubType>
@@ -196,8 +208,14 @@
     <EmbeddedResource Include="WinForm\Maestros\WFCliente.resx">
       <DependentUpon>WFCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\Maestros\WFPresentacion.resx">
+      <DependentUpon>WFPresentacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinForm\Maestros\WFProducto.resx">
       <DependentUpon>WFProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm\Maestros\WFProductoPresentacion.resx">
+      <DependentUpon>WFProductoPresentacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinForm\Maestros\WFSubCAtegorias.resx">
       <DependentUpon>WFSubCategorias.cs</DependentUpon>

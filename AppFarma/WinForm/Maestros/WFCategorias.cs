@@ -72,6 +72,7 @@ namespace AppFarma.WinForm.Maestros
             ActivarControles(true);
             txtCodCategoria.Text = "";
             txtDescripcion.Text = "";
+            txtUltimoUsuario.Text = Program.sUsuario;
 
 
         }

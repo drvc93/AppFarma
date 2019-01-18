@@ -35,11 +35,11 @@ namespace AppFarma.WinForm.Dialogs
             //dt.Columns.Remove("d_ultfechamod");
             dt.Columns.Remove("c_estado");
 
-            RepositoryItemLookUpEdit myLookup = new RepositoryItemLookUpEdit();
-            myLookup.DisplayMember = "c_descripcion";
-            myLookup.ValueMember = "n_codigoprincipoact";
-            myLookup.DataSource = dt;
-            gridView1.Columns["n_codigoprincipoact"].ColumnEdit = myLookup;
+            //RepositoryItemLookUpEdit myLookup = new RepositoryItemLookUpEdit();
+            repositoryItemLookUpEdit1.DisplayMember = "c_descripcion";
+            repositoryItemLookUpEdit1.ValueMember = "n_codigoprincipoact";
+            repositoryItemLookUpEdit1.DataSource = dt;
+            gridView1.Columns["n_codigoprincipoact"].ColumnEdit = repositoryItemLookUpEdit1;
 
         }
 
@@ -126,7 +126,7 @@ namespace AppFarma.WinForm.Dialogs
         public bool ComprobarExisteRepetidos()
         {
             bool exiteRep = false;
-            int codFlag = 0, codTemp = 0, contador = 0;
+            int codFlag = 0,  contador = 0;
 
             for(int i =  0; i < gridView1.RowCount; i++)
             {

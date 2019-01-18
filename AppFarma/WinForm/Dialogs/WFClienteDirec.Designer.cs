@@ -437,6 +437,7 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(550, 504);
             this.Name = "WFClienteDirec";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Direccion Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.chkActivo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();

@@ -85,7 +85,7 @@ namespace AppFarma.WinForm.Maestros
             sProducto = String.IsNullOrEmpty(txtCodProducto.Text) ? "N" : txtCodProducto.Text;
             nSubCateg = cboSubCat.SelectedIndex >= 0 ?  Convert.ToInt32( cboSubCat.SelectedValue ): -1;
             nCatego = cboCat.SelectedIndex >= 0 ? Convert.ToInt32(cboCat.SelectedValue) : -1;
-            sUsuario = "";
+            sUsuario =  Program.sUsuario;
             sDescrip = txtDescripcion.Text;
             sEstado = sProducto == "N" ? "A" : chkEstadoProd.Checked?"A":"I";
 
@@ -138,6 +138,9 @@ namespace AppFarma.WinForm.Maestros
             btnGuardar.Enabled = true;
             txtCodBarra.Enabled = true;
             txtUltimoUsuario.Text = Program.SUsuario;
+            txtCodBarra.Text = "";
+            //txtUltimaFecha.Text = "";
+            //txtUltimoUsuario.Text = "";
         }
 
         private void gvProductos_Click(object sender, EventArgs e)

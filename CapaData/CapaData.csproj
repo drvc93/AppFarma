@@ -44,6 +44,7 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="DataCategoria.cs" />
     <Compile Include="DataCliente.cs" />
+    <Compile Include="DataPresentacion.cs" />
     <Compile Include="DataPrincipioActv.cs" />
     <Compile Include="DataProducto.cs" />
     <Compile Include="DataSubCategoria.cs" />

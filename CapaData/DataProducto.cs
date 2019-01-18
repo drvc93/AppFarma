@@ -152,6 +152,60 @@ namespace CapaData
            
 
         }
+
+        public string InsertProductoPresentacion (string sProducto  , string sPresentacion , int nCorrelativo  , string sUsuario ,  int nCantidad ,string sEstado )
+        {
+
+            SqlConnection cn = con.conexion();
+            string result = "";
+            SqlCommand sqlcmd = new SqlCommand();
+            sqlcmd.Connection = cn;
+            try
+            {
+                sqlcmd.CommandText = "SPI_PRODUCTOPRESENTACION";
+                sqlcmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                sqlcmd.Parameters.AddWithValue("@Producto", sProducto);
+                sqlcmd.Parameters.AddWithValue("@Presentacion", sPresentacion);
+                sqlcmd.Parameters.AddWithValue("@Correlativo", nCorrelativo);
+                sqlcmd.Parameters.AddWithValue("@Usuario", sUsuario);
+                sqlcmd.Parameters.AddWithValue("@Fecha", DateTime.Now);
+                sqlcmd.Parameters.AddWithValue("@Cantidad", nCantidad);
+                sqlcmd.Parameters.AddWithValue("@Estado", sEstado);
+
+                int rowsafect = sqlcmd.ExecuteNonQuery();
+                if (rowsafect > 0)
+                {
+                    result = "OK";
+                }
+            }
+            catch (SqlException ex)
+            {
+                result = Convert.ToString(ex.ErrorCode) + ":" + ex.Message;
+            }
+            finally { cn.Close(); }
+
+            return result;
+
+        }
+
+        public DataTable ListaProductoPresentacion( string sProducto   , string sPresentacion , int nCorrelativo , string sEstado )
+        {
+            SqlConnection cn = con.conexion();
+            cn.Open();
+            SqlDataAdapter dap = new SqlDataAdapter("SPS_LISTA_PRESENTACIONPRODUCTO ", cn);
+            DataTable dt = new DataTable();
+            dap.SelectCommand.CommandType = CommandType.StoredProcedure;
+            dap.SelectCommand.Parameters.AddWithValue("@Producto", sProducto);
+            dap.SelectCommand.Parameters.AddWithValue("@Presentacion", sPresentacion);
+            dap.SelectCommand.Parameters.AddWithValue("@Correlativo", nCorrelativo);
+            dap.SelectCommand.Parameters.AddWithValue("@Estado", sEstado);
+
+            dap.Fill(dt);
+            cn.Close();
+
+            return dt;
+        }
        
     }
 }

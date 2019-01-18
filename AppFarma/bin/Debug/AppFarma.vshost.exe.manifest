@@ -42,26 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppFarma.exe" size="663504">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppFarma.exe" size="768464">
       <assemblyIdentity name="AppFarma" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rZCdI1tZtrP1Tg1iTKsm3bVbeKio4jYXSP+cxWLkWPM=</dsig:DigestValue>
+        <dsig:DigestValue>/ZihjTbAi1+zjw21pv84J3iKbwojezVMSnJB3l/jaLM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CapaData.dll" size="14336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CapaData.dll" size="15872">
       <assemblyIdentity name="CapaData" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OvukzlRQxzJQ2UaNAVHEqDVYmVFFGueDdWnl4svF428=</dsig:DigestValue>
+        <dsig:DigestValue>Q/JaLumbx7G4w/LLAhWcLT2DH8qsxo6RNXgsreMH9Z0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

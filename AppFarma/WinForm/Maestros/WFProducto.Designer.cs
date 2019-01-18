@@ -33,6 +33,8 @@ namespace AppFarma.WinForm.Maestros
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WFProducto));
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.txtCodBarra = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.chkEstadoProd = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
@@ -72,10 +74,9 @@ namespace AppFarma.WinForm.Maestros
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.btnExportarGV = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.txtCodBarra = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCodBarra.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkEstadoProd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUltimaFecha.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUltimoUsuario.Properties)).BeginInit();
@@ -86,7 +87,6 @@ namespace AppFarma.WinForm.Maestros
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCodBarra.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // radPanel1
@@ -116,6 +116,30 @@ namespace AppFarma.WinForm.Maestros
             this.radPanel1.Name = "radPanel1";
             this.radPanel1.Size = new System.Drawing.Size(405, 586);
             this.radPanel1.TabIndex = 6;
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Appearance.Options.UseForeColor = true;
+            this.labelControl8.Location = new System.Drawing.Point(27, 178);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(79, 18);
+            this.labelControl8.TabIndex = 18;
+            this.labelControl8.Text = "Cod. Barra";
+            // 
+            // txtCodBarra
+            // 
+            this.txtCodBarra.Enabled = false;
+            this.txtCodBarra.Location = new System.Drawing.Point(122, 166);
+            this.txtCodBarra.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCodBarra.Name = "txtCodBarra";
+            this.txtCodBarra.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtCodBarra.Properties.Appearance.Options.UseFont = true;
+            this.txtCodBarra.Size = new System.Drawing.Size(248, 30);
+            this.txtCodBarra.TabIndex = 17;
             // 
             // labelControl7
             // 
@@ -412,6 +436,7 @@ namespace AppFarma.WinForm.Maestros
             // repositoryItemCheckEdit1
             // 
             this.repositoryItemCheckEdit1.AutoHeight = false;
+            this.repositoryItemCheckEdit1.AutoWidth = true;
             this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
             // 
             // btnModificar
@@ -522,30 +547,6 @@ namespace AppFarma.WinForm.Maestros
             this.btnExportarGV.Text = "Exportar";
             this.btnExportarGV.Click += new System.EventHandler(this.btnExportarGV_Click);
             // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(27, 178);
-            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(79, 18);
-            this.labelControl8.TabIndex = 18;
-            this.labelControl8.Text = "Cod. Barra";
-            // 
-            // txtCodBarra
-            // 
-            this.txtCodBarra.Enabled = false;
-            this.txtCodBarra.Location = new System.Drawing.Point(122, 166);
-            this.txtCodBarra.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCodBarra.Name = "txtCodBarra";
-            this.txtCodBarra.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.txtCodBarra.Properties.Appearance.Options.UseFont = true;
-            this.txtCodBarra.Size = new System.Drawing.Size(248, 30);
-            this.txtCodBarra.TabIndex = 17;
-            // 
             // WFProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -566,6 +567,7 @@ namespace AppFarma.WinForm.Maestros
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
             this.radPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCodBarra.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkEstadoProd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUltimaFecha.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUltimoUsuario.Properties)).EndInit();
@@ -576,7 +578,6 @@ namespace AppFarma.WinForm.Maestros
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCodBarra.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

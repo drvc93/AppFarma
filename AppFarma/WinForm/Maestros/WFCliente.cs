@@ -200,7 +200,7 @@ namespace AppFarma.WinForm.Maestros
         }
 
         public void LoadDetalleTelf() {
-            string sRaz, sDoc, sTipoCli;
+            string  sDoc, sTipoCli;
             int index = gridView1.FocusedRowHandle;
             DataCliente c;
             if (index >= 0)
@@ -214,7 +214,7 @@ namespace AppFarma.WinForm.Maestros
 
         public void LoadDetalleDirecciones()
         {
-            string sRaz, sDoc, sTipoCli;
+            string  sDoc, sTipoCli;
             int index = gridView1.FocusedRowHandle;
             DataCliente c;
             if (index >= 0)
