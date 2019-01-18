@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace AppFarma.WinForm.Maestros
 {
-    public partial class WPrincipActiv : Form
+    public partial class WPrincipActiv : DevExpress.XtraEditors.XtraForm
     {
         public WPrincipActiv()
         {

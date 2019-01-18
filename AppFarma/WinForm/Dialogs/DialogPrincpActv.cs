@@ -14,7 +14,7 @@ using DevExpress.XtraEditors;
 
 namespace AppFarma.WinForm.Dialogs
 {
-    public partial class DialogPrincpActv : Form
+    public partial class DialogPrincpActv : DevExpress.XtraEditors.XtraForm
     {
         public string sCodProduc = "";
         public DialogPrincpActv()
@@ -31,11 +31,7 @@ namespace AppFarma.WinForm.Dialogs
             DataTable dt = dp.ListaPrincipiosActv(0, "%", "%");
             dt.Columns.Remove("c_usuarioreg");
             dt.Columns.Remove("d_fecharegistro");
-            // dt.Columns.Remove("c_usuarioultmod");
-            //dt.Columns.Remove("d_ultfechamod");
             dt.Columns.Remove("c_estado");
-
-            //RepositoryItemLookUpEdit myLookup = new RepositoryItemLookUpEdit();
             repositoryItemLookUpEdit1.DisplayMember = "c_descripcion";
             repositoryItemLookUpEdit1.ValueMember = "n_codigoprincipoact";
             repositoryItemLookUpEdit1.DataSource = dt;
