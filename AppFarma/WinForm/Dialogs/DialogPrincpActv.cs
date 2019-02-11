@@ -151,17 +151,17 @@ namespace AppFarma.WinForm.Dialogs
 
         private void repositoryItemLookUpEdit1_EditValueChanged(object sender, EventArgs e)
         {
-           
+            // Method intentionally left empty.
         }
 
         private void gridView1_CustomUnboundColumnData(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDataEventArgs e)
         {
-           
+            // Method intentionally left empty.
         }
 
         private void repositoryItemLookUpEdit1_Leave(object sender, EventArgs e)
         {
-            
+            // Method intentionally left empty.
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
