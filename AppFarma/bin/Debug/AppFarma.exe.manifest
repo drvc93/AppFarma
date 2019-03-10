@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppFarma.exe" size="768464">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppFarma.exe" size="768512">
       <assemblyIdentity name="AppFarma" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9pmbq5hMevpi5cA50mAONz2f8XFncBMm+qsdNwZqbus=</dsig:DigestValue>
+        <dsig:DigestValue>5ZdWVD1PxTJi8jy7Nv0xY2+5yMcHysXNFnGi6DhSc5E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Q/JaLumbx7G4w/LLAhWcLT2DH8qsxo6RNXgsreMH9Z0=</dsig:DigestValue>
+        <dsig:DigestValue>QyP5gTu5hz/C61h9l/GZ0c6ZVf3QNp+iWVtwXxw7sPI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

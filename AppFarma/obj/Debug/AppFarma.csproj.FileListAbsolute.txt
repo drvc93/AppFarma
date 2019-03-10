@@ -115,8 +115,6 @@ D:\AppFarma\AppFarma\obj\Debug\AppFarma.exe
 D:\AppFarma\AppFarma\obj\Debug\AppFarma.pdb
 D:\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Dialogs.WFClienteTelf.resources
 D:\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Dialogs.WFClienteDirec.resources
-E:\AppFarma\AppFarma\obj\Debug\AppFarma.exe
-E:\AppFarma\AppFarma\obj\Debug\AppFarma.pdb
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.csprojResolveAssemblyReference.cache
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.Form1.resources
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.Properties.Resources.resources
@@ -125,11 +123,15 @@ E:\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Dialogs.WFClienteDirec.resources
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Dialogs.WFClienteTelf.resources
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Maestros.WFCategorias.resources
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Maestros.WFCliente.resources
+E:\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Maestros.WFPresentacion.resources
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Maestros.WFProducto.resources
+E:\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Maestros.WFProductoPresentacion.resources
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Maestros.WFSubCategorias.resources
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Maestros.WPrincipActiv.resources
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.csproj.GenerateResource.Cache
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.exe.licenses
+E:\AppFarma\AppFarma\obj\Debug\AppFarma.exe
+E:\AppFarma\AppFarma\obj\Debug\AppFarma.pdb
 E:\AppFarma\AppFarma\bin\Debug\AppFarma.exe.manifest
 E:\AppFarma\AppFarma\bin\Debug\AppFarma.application
 E:\AppFarma\AppFarma\bin\Debug\AppFarma.exe
@@ -239,5 +241,3 @@ E:\AppFarma\AppFarma\bin\Debug\ja\DevExpress.XtraTreeList.v18.1.resources.dll
 E:\AppFarma\AppFarma\bin\Debug\ru\DevExpress.XtraTreeList.v18.1.resources.dll
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.exe.manifest
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.application
-E:\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Maestros.WFPresentacion.resources
-E:\AppFarma\AppFarma\obj\Debug\AppFarma.WinForm.Maestros.WFProductoPresentacion.resources
