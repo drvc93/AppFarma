@@ -109,7 +109,7 @@ namespace AppFarma.WinForm.Maestros
         {
             int row = gridProductPres.FocusedRowHandle;
 
-            if ( row <= 0)
+            if ( row < 0)
             {
                 XtraMessageBox.Show(text: "Seleccione una fila primero.", caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Warning);
                 return;

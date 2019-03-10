@@ -22,7 +22,6 @@ namespace CapaData
         public SqlConnection conexion()
         {
             Conn = "data source = " + GetCredenciales("Server") + "; initial catalog = " + GetCredenciales("DBase") + "; user id = " + GetCredenciales("UserDB") + "; password =" + GetCredenciales("Password");
-            //Conn = Constantes.ConexionString;
             return new SqlConnection(Conn);
         }
 

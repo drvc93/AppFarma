@@ -21,20 +21,9 @@ namespace AppFarma
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            //SkinManager.EnableFormSkins();
             Application.Run(new Form1());
         }
 
-        public static string SUsuario
-        {
-            get
-            {
-                return sUsuario;
-            }
-            set
-            {
-                sUsuario = value;
-            }
-        }
-    }
+        public static string SUsuario { get; set; }
+         }
 }

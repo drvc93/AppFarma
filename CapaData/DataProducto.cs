@@ -10,7 +10,7 @@ namespace CapaData
 {
     public class DataProducto
     {
-        Conexion con;
+        readonly Conexion con;
         public DataProducto()
         {
              con = new Conexion();
@@ -123,9 +123,7 @@ namespace CapaData
 
         public void DeletePrincipiosProudcto(string sCodProducto)
         {
-
             SqlConnection cn = con.conexion();
-            string result = "";
             SqlCommand sqlcmd = new SqlCommand();
             sqlcmd.Connection = cn;
             try
@@ -134,23 +132,9 @@ namespace CapaData
                 sqlcmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 sqlcmd.Parameters.AddWithValue("@Producto", sCodProducto);
-              ;
-
-
-                int rowsafect = sqlcmd.ExecuteNonQuery();
-                if (rowsafect > 0)
-                {
-                    result = "OK";
-                }
+                sqlcmd.ExecuteNonQuery();   
             }
-            catch (SqlException ex)
-            {
-                result = Convert.ToString(ex.ErrorCode) + ":" + ex.Message;
-            }
-            finally { cn.Close(); }
-
-           
-
+            finally { cn.Close();}
         }
 
         public string InsertProductoPresentacion (string sProducto  , string sPresentacion , int nCorrelativo  , string sUsuario ,  int nCantidad ,string sEstado )

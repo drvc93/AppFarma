@@ -11,8 +11,8 @@ namespace CapaData
 {
     public class IniFile
     {
-        string Path;
-        string EXE = Assembly.GetExecutingAssembly().GetName().Name;
+        readonly string  Path;
+        readonly string EXE = Assembly.GetExecutingAssembly().GetName().Name;
 
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
         static extern long WritePrivateProfileString(string Section, string Key, string Value, string FilePath);

@@ -10,7 +10,7 @@ namespace CapaData
 {
     public class DataPrincipioActv
     {
-        Conexion con;
+         readonly Conexion con;
 
         public DataPrincipioActv()
         {
