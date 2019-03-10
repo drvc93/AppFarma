@@ -27,8 +27,6 @@ namespace AppFarma.WinForm.Maestros
             DataTable dt  = prod.ListaProductos("%", 0, 0, "%", "%", "%");
             CargarAutoCompletoProduc(dt);
             gvProductos.DataSource =dt;
-            //txtFiltroDescrip.Properties.NullText = "Descripcion Producto";
-            //txtPrincipAct.Properties.NullText = "Principio Activo";
         }
 
         public void LoadComboCategoria()
@@ -59,7 +57,6 @@ namespace AppFarma.WinForm.Maestros
                 {
                     XtraMessageBox.Show( "La categoria no tiene sub categorias.", "Aviso",MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     cboSubCat.DataSource = null;
-                    return;
                 }
                
             }
@@ -67,7 +64,6 @@ namespace AppFarma.WinForm.Maestros
             else
             {
                 XtraMessageBox.Show( "Categoria Incorrecta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
             }
 
             
@@ -78,6 +74,10 @@ namespace AppFarma.WinForm.Maestros
             LoadComboSubCateg();
         }
 
+        public string  CheckStatusProduct()
+        {
+            return chkEstadoProd.Checked ? "A" : "I";
+        }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             string  sDescrip ,sUsuario, sEstado , sProducto;
@@ -87,9 +87,7 @@ namespace AppFarma.WinForm.Maestros
             nCatego = cboCat.SelectedIndex >= 0 ? Convert.ToInt32(cboCat.SelectedValue) : -1;
             sUsuario =  Program.sUsuario;
             sDescrip = txtDescripcion.Text;
-            sEstado = sProducto == "N" ? "A" : chkEstadoProd.Checked?"A":"I";
-
-
+            sEstado = sProducto == "N" ? "A" : CheckStatusProduct();
 
             if (nCatego == -1)
             {
@@ -114,13 +112,11 @@ namespace AppFarma.WinForm.Maestros
             {
                 XtraMessageBox.Show(text: "Se registro correctamente la información.", caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Information);
                 gvProductos.DataSource = prod.ListaProductos("%", 0, 0, "%", "%", "%");
-                return;
 
             }
             else
             {
                 XtraMessageBox.Show(text:result , caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Information);
-                return;
 
             }
       
@@ -139,8 +135,6 @@ namespace AppFarma.WinForm.Maestros
             txtCodBarra.Enabled = true;
             txtUltimoUsuario.Text = Program.SUsuario;
             txtCodBarra.Text = "";
-            //txtUltimaFecha.Text = "";
-            //txtUltimoUsuario.Text = "";
         }
 
         private void gvProductos_Click(object sender, EventArgs e)
@@ -167,8 +161,6 @@ namespace AppFarma.WinForm.Maestros
                 return;
             }
 
-            //txtCodProducto.Text = "";
-            //txtDescripcion.Text = "";
             txtDescripcion.Enabled = true;
             txtUltimaFecha.Text = DateTime.Now.ToString();
             cboCat.Enabled = true;
@@ -197,62 +189,39 @@ namespace AppFarma.WinForm.Maestros
 
         public void CargarAutocompletePrinc()
         {
-          /*  DataPrincipioActv prod = new  DataPrincipioActv();
-            DataTable dt = prod.ListaPrincipiosActv(0, "%", "%");
-            string[] str = new string[dt.Rows.Count];
-
-            for (int i = 0; i< dt.Rows.Count; i++)
-            {
-                str[i] = dt.Rows[i]["c_descripcion"].ToString();
-            }
-            AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
-            collection.AddRange(str);
-            txtPrincipAct.MaskBox.AutoCompleteCustomSource = collection;
-            txtPrincipAct.MaskBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
-            txtPrincipAct.MaskBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;*/
+            // Method intentionally left empty.
         }
 
         public void CargarAutoCompletoProduc(DataTable   dt)
         {
-           /* string[] str = new string[dt.Rows.Count];
-
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                str[i] = dt.Rows[i]["c_descripcionprod"].ToString();
-            }
-            AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
-            collection.AddRange(str);
-            txtFiltroDescrip.MaskBox.AutoCompleteCustomSource = collection;
-            txtFiltroDescrip.MaskBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
-            txtFiltroDescrip.MaskBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;*/
+            // Method intentionally left empty.
         }
 
 
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-          //  DataProducto prod = new DataProducto();
-            //gvProductos.DataSource = prod.ListaProductos("%", 0, 0, txtFiltroDescrip.Text, "%", txtPrincipAct.Text);
+            // Method intentionally left empty.
         }
 
         private void radExport_Click(object sender, EventArgs e)
         {
-
+            // Method intentionally left empty.
         }
 
         private void radExport_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-
+            // Method intentionally left empty.
         }
 
         private void radbtnExpor_DefaultItemChanged(object sender, EventArgs e)
         {
-            
+            // Method intentionally left empty.
         }
-        
+
         private void radbtnExpor_DoubleClick(object sender, EventArgs e)
         {
-         
+            // Method intentionally left empty.
         }
 
         private void btnExportarGV_Click(object sender, EventArgs e)
@@ -269,7 +238,7 @@ namespace AppFarma.WinForm.Maestros
 
         private void gridView1_Click(object sender, EventArgs e)
         {
-
+            // comment
         }
     }
 }

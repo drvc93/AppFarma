@@ -15,9 +15,9 @@ namespace AppFarma.WinForm.Dialogs
 {
     public partial class WFClienteTelf : DevExpress.XtraEditors.XtraForm
     {
-        public int nLinea;
-        public string sTipoCli;
-        public WFCliente wfcli;
+        public int nLinea { get; set; }
+        public string sTipoCli { get; set; }
+        public WFCliente wfcli { get; set; }
         public WFClienteTelf()
         {
             InitializeComponent();
@@ -25,12 +25,12 @@ namespace AppFarma.WinForm.Dialogs
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-
+            //comment
         }
 
         private void WFClienteTelf_Load(object sender, EventArgs e)
         {
-
+            //comment
         }
 
         public void SetCliente(string sDoc, string sRazon)
@@ -69,12 +69,10 @@ namespace AppFarma.WinForm.Dialogs
                 XtraMessageBox.Show(text: "Se registro correctamente el número " + sTelf + " del cliente " + txtClienteNomb.Text + " .", caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Information);
                 wfcli.LoadDetalleTelf();
                 this.Close();
-                return;
             }
             else
             {
                 XtraMessageBox.Show(text: sResult, caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
-                return;
             }
 
         }

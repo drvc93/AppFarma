@@ -22,19 +22,19 @@ namespace AppFarma.WinForm.Maestros
 
         private void labelControl1_Click(object sender, EventArgs e)
         {
-
+            // Method intentionally left empty.
         }
 
         private void labelControl2_Click(object sender, EventArgs e)
         {
-
+            // Method intentionally left empty.
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             string tipoOpe = "";
             int CodCategoria;
-            if (String.IsNullOrEmpty(txtCodCategoria.Text) == true)
+            if (String.IsNullOrEmpty(txtCodCategoria.Text))
             {
                 tipoOpe = "registrar";
                 CodCategoria = 0;
@@ -79,7 +79,7 @@ namespace AppFarma.WinForm.Maestros
 
         public void ActivarControles(bool  isActived)
         {
-            if (isActived == true) { 
+            if (isActived) { 
             txtUltimaFecha.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
             }
             else
@@ -123,7 +123,7 @@ namespace AppFarma.WinForm.Maestros
 
         private void WFCategorias_Load(object sender, EventArgs e)
         {
-
+            // add comment
         }
     }
 }

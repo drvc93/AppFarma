@@ -11,8 +11,8 @@ namespace CapaData
 {
     public  class Conexion
     {
-        SqlConnection con;
-        string Conn;
+        readonly SqlConnection con;
+        
         public Conexion()
         {
             if (con == null)
@@ -21,7 +21,7 @@ namespace CapaData
 
         public SqlConnection conexion()
         {
-            Conn = "data source = " + GetCredenciales("Server") + "; initial catalog = " + GetCredenciales("DBase") + "; user id = " + GetCredenciales("UserDB") + "; password =" + GetCredenciales("Password");
+            string  Conn = "data source = " + GetCredenciales("Server") + "; initial catalog = " + GetCredenciales("DBase") + "; user id = " + GetCredenciales("UserDB") + "; password =" + GetCredenciales("Password");
             return new SqlConnection(Conn);
         }
 

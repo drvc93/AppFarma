@@ -16,15 +16,14 @@ namespace AppFarma.WinForm.Dialogs
 {
     public partial class WFClienteDirec : DevExpress.XtraEditors.XtraForm
     {
-        public int nSecuencia;
-        public string sTipoCli;
-        public WFCliente wfcli;
+        public int nSecuencia { get; set; }
+        public string sTipoCli { get; set; }
+        public WFCliente wfcli { get; set; }
         DataUbigeo ub;
         public WFClienteDirec()
         {
             InitializeComponent();
             LoadComboUbigeo();
-            //ConfigGVDirecciones();
         }
 
        
@@ -95,7 +94,6 @@ namespace AppFarma.WinForm.Dialogs
                 XtraMessageBox.Show(text: "Se registro correctamente  la direccion " + sDireccion + " del cliente " + txtClienteNomb.Text + " .", caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Information);
                 wfcli.LoadDetalleDirecciones();
                 this.Close();
-                return;
             }
             else
             {

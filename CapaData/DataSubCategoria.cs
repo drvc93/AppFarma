@@ -10,7 +10,7 @@ namespace CapaData
 {
     public class DataSubCategoria
     {
-        Conexion con;
+        readonly Conexion con;
 
         public DataSubCategoria()
         {

@@ -16,7 +16,7 @@ namespace AppFarma.WinForm.Dialogs
 {
     public partial class DialogPrincpActv : DevExpress.XtraEditors.XtraForm
     {
-        public string sCodProduc = "";
+        public string sCodProduc { get; set; }
         public DialogPrincpActv()
         {
             InitializeComponent();
@@ -69,19 +69,15 @@ namespace AppFarma.WinForm.Dialogs
 
         private void gridView1_InitNewRow(object sender, DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs e)
         {
-           
+           // add comment
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             string msj = "";
-            DataProducto dat = new DataProducto();
-           
-
             if (gridView1.RowCount<= 0)
             {
                 XtraMessageBox.Show(text: "No existe información para guardar.", caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Information);
-                return;
             }
             else
             {
@@ -138,9 +134,7 @@ namespace AppFarma.WinForm.Dialogs
 
                 if (contador > 1)
                 {
-                   // break;
-                    return true;
-                    
+                    return true;   
                 }
             }
 

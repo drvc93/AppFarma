@@ -8,9 +8,9 @@ using DevExpress.Skins;
 namespace AppFarma
 {
     static class Program
-    {   
+    {
 
-        public static  string sUsuario ;
+        public static string sUsuario {get;set;}
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

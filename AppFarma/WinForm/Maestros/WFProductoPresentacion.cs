@@ -56,7 +56,6 @@ namespace AppFarma.WinForm.Maestros
            if (Convert.ToInt32(numeripUpCantidad.Value.ToString())<= 0)
             {
                 XtraMessageBox.Show(text: "El valor no puede ser menor o gual que cero ", caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Warning);
-                return;
             }
         }
 
@@ -94,12 +93,10 @@ namespace AppFarma.WinForm.Maestros
             {
                 XtraMessageBox.Show(text: "Se registro correctamente la informacion. ", caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Information);
                 LoadGV();
-                return;
             }
             else
             {
                 XtraMessageBox.Show(text: sResult, caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Warning);
-                return;
             }
 
 
@@ -119,19 +116,17 @@ namespace AppFarma.WinForm.Maestros
             string sPresentacion = gridProductPres.GetRowCellValue(row, "c_presentacion").ToString();
             int nCorrelativo = Convert.ToInt32(gridProductPres.GetRowCellValue(row, "n_correlativo").ToString());
             int nCantidad = Convert.ToInt32(gridProductPres.GetRowCellValue(row, "n_cantidad").ToString());
-            string sEstado = Convert.ToBoolean(gridProductPres.GetRowCellValue(row, "c_estado")) == true ? "A" : "I";
+            string sEstado = Convert.ToBoolean(gridProductPres.GetRowCellValue(row, "c_estado"))? "A" : "I";
 
             string sResult = prod.InsertProductoPresentacion(sProducto, sPresentacion, nCorrelativo, Program.SUsuario, nCantidad, sEstado);
             if (sResult == "OK")
             {
                 XtraMessageBox.Show(text: "Se registro correctamente la informacion. ", caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Information);
                 LoadGV();
-                return;
             }
             else
             {
                 XtraMessageBox.Show(text: sResult, caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Warning);
-                return;
             }
 
 

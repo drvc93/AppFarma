@@ -10,7 +10,7 @@ namespace CapaData
 {
     public class DataUbigeo
     {
-        Conexion con;
+        readonly Conexion con;
         public DataUbigeo()
         {
             con = new Conexion();

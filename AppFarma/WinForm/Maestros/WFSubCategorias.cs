@@ -32,14 +32,14 @@ namespace AppFarma.WinForm.Maestros
 
         private void labelControl1_Click(object sender, EventArgs e)
         {
-
+            // Method intentionally left empty.
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             string tipoOpe = "", sEstado = ""; 
             int CodSubCategoria;
-            if (String.IsNullOrEmpty(txtCodSubcategoria.Text) == true)
+            if (String.IsNullOrEmpty(txtCodSubcategoria.Text))
             {
                 tipoOpe = "registrar";
                 CodSubCategoria = 0;
@@ -66,11 +66,6 @@ namespace AppFarma.WinForm.Maestros
                 {
 
                     XtraMessageBox.Show("Se guardo la información correctamente.", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    /* txtDescripcion.Text = "";
-                    txtUltimoUsuario.Text = "";
-                    txtCodCategoria.Text = "";
-                    ActivarControles(false);
-                    CargarGridCategoria();*/
                     LoadGridSubCategorias();
                 }
 
@@ -89,7 +84,7 @@ namespace AppFarma.WinForm.Maestros
 
         public void ActivarControles(bool isActived)
         {
-            if (isActived == true)
+            if (isActived)
             {
                 txtUltFecha.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
             }
@@ -123,7 +118,7 @@ namespace AppFarma.WinForm.Maestros
                 cboCat.SelectedValue = gridView1.GetRowCellValue(index, "n_categoria").ToString();
                 txtDescripcionSub.Text = gridView1.GetRowCellValue(index, "c_descripcion").ToString();
                 txtUltFecha.Text = gridView1.GetRowCellValue(index, "d_ultimafechamod").ToString();
-                chkEstadoSubCat.Checked = Convert.ToBoolean(gridView1.GetRowCellValue(index, "c_estado")) == true ? true : false; 
+                chkEstadoSubCat.Checked = Convert.ToBoolean(gridView1.GetRowCellValue(index, "c_estado")); 
                 txtUltUsuario.Text = gridView1.GetRowCellValue(index, "c_usuarioregistro").ToString();
 
             }

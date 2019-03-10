@@ -56,12 +56,10 @@ namespace AppFarma.WinForm.Maestros
                 LimpiarControles();
                 btnGuardar.Enabled = false;
                 LoadGV();
-                return;
             }
             else
             {
                 XtraMessageBox.Show(text: "Error : " + sResult, caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Warning);
-                return;
             }
         }
 

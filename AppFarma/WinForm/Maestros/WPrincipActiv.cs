@@ -42,9 +42,10 @@ namespace AppFarma.WinForm.Maestros
                 return;
             }
 
-            if (String.IsNullOrEmpty(sDescrip))
+            if (string.IsNullOrEmpty(sDescrip)) { 
             XtraMessageBox.Show("Ingrese descripción", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            return;
+            }
+
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -77,7 +78,7 @@ namespace AppFarma.WinForm.Maestros
                 txtDescripcion.Text = gridView1.GetRowCellValue(index, "c_descripcion").ToString();
                 txtUltimaFecha.Text = gridView1.GetRowCellValue(index, "d_fecharegistro").ToString();
                 txtUltimoUsuario.Text = gridView1.GetRowCellValue(index, "c_usuarioreg").ToString();
-                chkEstadoPrincipio.Checked = Convert.ToBoolean(gridView1.GetRowCellValue(index, "c_estado")) == true ? true : false;
+                chkEstadoPrincipio.Checked = Convert.ToBoolean(gridView1.GetRowCellValue(index, "c_estado"));
 
             }
         }

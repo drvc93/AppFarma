@@ -112,12 +112,10 @@ namespace AppFarma.WinForm.Maestros
                 LoadGVClientes();
                 Limpiar();
                 BloquearControles();
-                return;
             }
             else
             {
                 XtraMessageBox.Show(text: "ERROR: " + sResult, caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Warning);
-                return;
             }
 
 
@@ -249,12 +247,11 @@ namespace AppFarma.WinForm.Maestros
         private void repositoryItemButtonEdit2_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
             int index = gridDirecciones.FocusedRowHandle;
-            string sRaz, sDoc;
+            string sDoc;
             string sUbigeo;
             bool bEstado = false;
             WFClienteDirec wft = new WFClienteDirec();
             wft.sTipoCli = gridDirecciones.GetRowCellValue(index, "c_tipocliente").ToString();
-            sRaz = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "c_razonsocial").ToString();
             sDoc  = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "c_documento").ToString();
             sUbigeo = gridDirecciones.GetRowCellValue(index, "c_ubigeo").ToString();
             wft.nSecuencia = Convert.ToInt32(gridDirecciones.GetRowCellValue(index, "n_secuenciadireccion").ToString());
