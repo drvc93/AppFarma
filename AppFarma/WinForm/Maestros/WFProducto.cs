@@ -133,7 +133,7 @@ namespace AppFarma.WinForm.Maestros
             chkEstadoProd.Enabled = false;
             btnGuardar.Enabled = true;
             txtCodBarra.Enabled = true;
-            txtUltimoUsuario.Text = Program.SUsuario;
+            txtUltimoUsuario.Text = Program.sUsuario;
             txtCodBarra.Text = "";
         }
 

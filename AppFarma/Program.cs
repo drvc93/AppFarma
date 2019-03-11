@@ -10,7 +10,7 @@ namespace AppFarma
     static class Program
     {
 
-        public static string sUsuario {get;set;}
+        public static string sUsuario { get; set; }
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -23,7 +23,6 @@ namespace AppFarma
             BonusSkins.Register();
             Application.Run(new Form1());
         }
-
-        public static string SUsuario { get; set; }
-         }
+    }
+       
 }

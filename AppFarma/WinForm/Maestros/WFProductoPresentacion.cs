@@ -118,7 +118,7 @@ namespace AppFarma.WinForm.Maestros
             int nCantidad = Convert.ToInt32(gridProductPres.GetRowCellValue(row, "n_cantidad").ToString());
             string sEstado = Convert.ToBoolean(gridProductPres.GetRowCellValue(row, "c_estado"))? "A" : "I";
 
-            string sResult = prod.InsertProductoPresentacion(sProducto, sPresentacion, nCorrelativo, Program.SUsuario, nCantidad, sEstado);
+            string sResult = prod.InsertProductoPresentacion(sProducto, sPresentacion, nCorrelativo, Program.sUsuario, nCantidad, sEstado);
             if (sResult == "OK")
             {
                 XtraMessageBox.Show(text: "Se registro correctamente la informacion. ", caption: "Aviso", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Information);

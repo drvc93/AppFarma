@@ -17,7 +17,7 @@ namespace AppFarma
         {
             InitializeComponent();
             Program.sUsuario = "DVILLANUEV";
-            barlblUser.Caption = Program.SUsuario;
+            barlblUser.Caption = Program.sUsuario;
         }
 
         private void bbtnCategoria_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

@@ -52,7 +52,7 @@ namespace AppFarma.WinForm.Maestros
             cboTipoCliente.Enabled = true;
             cboTipoCliente.SelectedIndex = 1;
             txtFechaReg.Text = DateTime.Now.ToShortDateString();
-            txtUserReg.Text = Program.SUsuario;
+            txtUserReg.Text = Program.sUsuario;
             txtNumeroDoc.Mask = "########";
             txtRazonNom.Enabled = true;
             txtFechaNac.Enabled = true;
@@ -103,7 +103,7 @@ namespace AppFarma.WinForm.Maestros
             sApePat = txtApePat.Text;
             sEstado = chkActivo.Checked ? "A" : "I";
             dFechaNac = Convert.ToDateTime(txtFechaNac.Text);
-            sUsuario = Program.SUsuario;
+            sUsuario = Program.sUsuario;
 
             sResult = cli.InsertCliente(sTipoCli, sNumeroDoc, sNombre, sApePat, sApeMat, dFechaNac, sUsuario, sEstado);
 
