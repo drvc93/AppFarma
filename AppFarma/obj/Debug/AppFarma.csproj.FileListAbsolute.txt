@@ -241,3 +241,5 @@ E:\AppFarma\AppFarma\bin\Debug\ja\DevExpress.XtraTreeList.v18.1.resources.dll
 E:\AppFarma\AppFarma\bin\Debug\ru\DevExpress.XtraTreeList.v18.1.resources.dll
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.exe.manifest
 E:\AppFarma\AppFarma\obj\Debug\AppFarma.application
+E:\AppFarma\AppFarma\bin\Debug\AppFarma.exe.CodeAnalysisLog.xml
+E:\AppFarma\AppFarma\bin\Debug\AppFarma.exe.lastcodeanalysissucceeded
