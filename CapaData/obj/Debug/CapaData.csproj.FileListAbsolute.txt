@@ -12,5 +12,4 @@ E:\AppFarma\CapaData\bin\Debug\CapaData.dll
 E:\AppFarma\CapaData\bin\Debug\CapaData.pdb
 E:\AppFarma\CapaData\obj\Debug\CapaData.dll
 E:\AppFarma\CapaData\obj\Debug\CapaData.pdb
-E:\AppFarma\CapaData\bin\Debug\CapaData.dll.CodeAnalysisLog.xml
-E:\AppFarma\CapaData\bin\Debug\CapaData.dll.lastcodeanalysissucceeded
+E:\AppFarma\CapaData\obj\Debug\CapaData.csprojResolveAssemblyReference.cache
