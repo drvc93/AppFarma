@@ -103,7 +103,7 @@ namespace AppFarma.WinForm.Maestros
             sApePat = txtApePat.Text;
             sEstado = chkActivo.Checked ? "A" : "I";
             dFechaNac = Convert.ToDateTime(txtFechaNac.Text);
-            sUsuario = Program.sUsuario;
+            sUsuario = Program.sUsuario  ;
 
             sResult = cli.InsertCliente(sTipoCli, sNumeroDoc, sNombre, sApePat, sApeMat, dFechaNac, sUsuario, sEstado);
 
